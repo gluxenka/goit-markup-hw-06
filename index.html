@@ -49,6 +49,16 @@
             </li>
           </ul>
         </address>
+        <button class="header-menu-button">
+          <svg
+            class="icon header-menu-icon"
+            width="24"
+            height="24"
+            aria-label="user icon"
+          >
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -121,7 +131,8 @@
           <ul class="team-list">
             <li class="team-image-card">
               <img
-                src="./images/mark_guerrero.jpg"
+                srcset="./images/team/mark_guerrero@2.jpg 2x"
+                src="./images/team/mark_guerrero.jpg"
                 alt="mark_guerrero"
                 width="264"
               />
@@ -161,7 +172,12 @@
               </div>
             </li>
             <li class="team-image-card">
-              <img src="./images/tom_ford.jpg" alt="tom_ford" width="264" />
+              <img
+                srcset="./images/team/tom_ford@2.jpg 2x"
+                src="./images/team/tom_ford.jpg"
+                alt="tom_ford"
+                width="264"
+              />
               <div class="team-card-content">
                 <h3 class="section-item-header">Tom Ford</h3>
                 <p class="section-item-text">Frontend Developer</p>
@@ -199,7 +215,8 @@
             </li>
             <li class="team-image-card">
               <img
-                src="./images/camila_garcia.jpg"
+                srcset="./images/team/camila_garcia@2.jpg 2x"
+                src="./images/team/camila_garcia.jpg"
                 alt="camila_garcia"
                 width="264"
               />
@@ -240,7 +257,8 @@
             </li>
             <li class="team-image-card">
               <img
-                src="./images/daniel_wilson.jpg"
+                srcset="./images/team/daniel_wilson@2.jpg 2x"
+                src="./images/team/daniel_wilson.jpg"
                 alt="daniel_wilson"
                 width="264"
               />
@@ -290,7 +308,16 @@
             <li class="portfolio-list-item">
               <div class="image-container">
                 <img
-                  src="./images/app.jpg"
+                  srcset="
+                    ./images/portfolio/app_mob.jpg       288w,
+                    ./images/portfolio/app_mob@2.jpg     576w,
+                    ./images/portfolio/app_tablet.jpg    356w,
+                    ./images/portfolio/app_tablet@2.jpg  712w,
+                    ./images/portfolio/app_desktop.jpg   360w,
+                    ./images/portfolio/app_desktop@2.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (min-width: 320px) 288px"
+                  src="./images/portfolio/app_mob.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -309,7 +336,16 @@
             <li class="portfolio-list-item">
               <div class="image-container">
                 <img
-                  src="./images/payment.jpg"
+                  srcset="
+                    ./images/portfolio/payment_mob.jpg       288w,
+                    ./images/portfolio/payment_mob@2.jpg     576w,
+                    ./images/portfolio/payment_tablet.jpg    356w,
+                    ./images/portfolio/payment_tablet@2.jpg  712w,
+                    ./images/portfolio/payment_desktop.jpg   360w,
+                    ./images/portfolio/payment_desktop@2.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (min-width: 320px) 288px"
+                  src="./images/portfolio/payment_mob.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -328,7 +364,16 @@
             <li class="portfolio-list-item">
               <div class="image-container">
                 <img
-                  src="./images/medatation.jpg"
+                  srcset="
+                    ./images/portfolio/meditation_mob.jpg       288w,
+                    ./images/portfolio/meditation_mob@2.jpg     576w,
+                    ./images/portfolio/meditation_tablet.jpg    356w,
+                    ./images/portfolio/meditation_tablet@2.jpg  712w,
+                    ./images/portfolio/meditation_desktop.jpg   360w,
+                    ./images/portfolio/meditation_desktop@2.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (min-width: 320px) 288px"
+                  src="./images/portfolio/meditation_mob.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -347,7 +392,16 @@
             <li class="portfolio-list-item">
               <div class="image-container">
                 <img
-                  src="./images/taxi.jpg"
+                  srcset="
+                    ./images/portfolio/taxi_mob.jpg       288w,
+                    ./images/portfolio/taxi_mob@2.jpg     576w,
+                    ./images/portfolio/taxi_tablet.jpg    356w,
+                    ./images/portfolio/taxi_tablet@2.jpg  712w,
+                    ./images/portfolio/taxi_desktop.jpg   360w,
+                    ./images/portfolio/taxi_desktop@2.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (min-width: 320px) 288px"
+                  src="./images/portfolio/taxi_mob.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -366,7 +420,16 @@
             <li class="portfolio-list-item">
               <div class="image-container">
                 <img
-                  src="./images/screen.jpg"
+                  srcset="
+                    ./images/portfolio/screen_mob.jpg       288w,
+                    ./images/portfolio/screen_mob@2.jpg     576w,
+                    ./images/portfolio/screen_tablet.jpg    356w,
+                    ./images/portfolio/screen_tablet@2.jpg  712w,
+                    ./images/portfolio/screen_desktop.jpg   360w,
+                    ./images/portfolio/screen_desktop@2.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (min-width: 320px) 288px"
+                  src="./images/portfolio/screen_mob.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -385,7 +448,16 @@
             <li class="portfolio-list-item">
               <div class="image-container">
                 <img
-                  src="./images/online_courses.jpg"
+                  srcset="
+                    ./images/portfolio/online_courses_mob.jpg       288w,
+                    ./images/portfolio/online_courses_mob@2.jpg     576w,
+                    ./images/portfolio/online_courses_tablet.jpg    356w,
+                    ./images/portfolio/online_courses_tablet@2.jpg  712w,
+                    ./images/portfolio/online_courses_desktop.jpg   360w,
+                    ./images/portfolio/online_courses_desktop@2.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (min-width: 320px) 288px"
+                  src="./images/portfolio/online_courses_mob.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -472,7 +544,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg
@@ -595,6 +667,75 @@
           </div>
           <button class="feedback-form-submit" type="button">Send</button>
         </form>
+      </div>
+    </div>
+    <div class="mob-nav-menu backdrop">
+      <div class="menu-container">
+        <button class="modal-close-btn" type="button">
+          <svg
+            class="icon close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="modal close icon"
+          >
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <nav class="menu-nav-container">
+          <ul class="menu-nav-links-container">
+            <li>
+              <a class="menu-nav-link active-page" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li><a class="menu-nav-link" href="">Portfolio</a></li>
+            <li><a class="menu-nav-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="menu-address-section">
+          <ul class="menu-address-items-container">
+            <li>
+              <a class="menu-contacts-info" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="menu-contacts-info" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="links-icon-container">
+          <li class="link-icon-item">
+            <a class="icon-wrapper" href=""
+              ><svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="link-icon-item">
+            <a class="icon-wrapper" href=""
+              ><svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="link-icon-item">
+            <a class="icon-wrapper" href=""
+              ><svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="link-icon-item">
+            <a class="icon-wrapper" href=""
+              ><svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

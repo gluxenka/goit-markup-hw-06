@@ -614,7 +614,6 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* gap: 24px; */
   gap: 16px;
 }
 .backdrop {
@@ -643,7 +642,7 @@ img {
   transform: translate(-50%, -50%);
   width: 288px;
   height: 623px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -766,6 +765,9 @@ img {
   margin-bottom: 24px;
 }
 .feedback-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: #8e8f99;
   font-size: 12px;
   font-style: normal;
@@ -804,6 +806,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feedback-form-own-checkbox {
+  min-width: 16px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -832,6 +835,8 @@ img {
   border: none;
 }
 .menu-container {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -842,11 +847,13 @@ img {
   background-color: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-nav-container {
+  flex: 1 1 100%;
+}
 .menu-nav-links-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
 }
 .menu-nav-link {
   color: #2e2f42;
@@ -858,6 +865,7 @@ img {
   text-transform: capitalize;
   text-decoration: none;
 }
+
 .menu-nav-link:hover,
 .menu-nav-link:focus,
 .menu-contacts-info:hover,
@@ -866,6 +874,7 @@ img {
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .menu-address-items-container {
   display: flex;
   flex-direction: column;
@@ -880,6 +889,9 @@ img {
   line-height: 1.2;
   letter-spacing: 0.4px;
   text-decoration: none;
+}
+.tel-info {
+  color: #404bbf;
 }
 .mob-nav-menu .links-icon-container {
   gap: 40px;
@@ -966,7 +978,7 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    padding-left: 108px;
+    width: 584px;
   }
   .footer-logo-container {
     width: 264px;
@@ -979,6 +991,7 @@ img {
   }
   .subscribe-form {
     flex-direction: row;
+    gap: 24px;
   }
   .footer-logo-container,
   .social-container,
@@ -988,6 +1001,7 @@ img {
   .modal {
     width: 408px;
     max-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
 
@@ -1058,6 +1072,7 @@ img {
   }
   .footer-section .container {
     gap: 0;
+    width: 100%;
   }
   .footer-logo-container {
     margin-right: 120px;
